@@ -1,3 +1,4 @@
+import random
 from re import template
 from django.shortcuts import render
 from datetime import datetime
@@ -30,6 +31,6 @@ def template4(request, nombre, apellido, edad):
 def probando(request):
     lista = list(range(500))
     
-    numeros = random.choises(lista, k=50)
+    numeros = random.choices(lista, k=50)
     
     return render(request, 'probando_if_for.html', {'numeros': numeros})
