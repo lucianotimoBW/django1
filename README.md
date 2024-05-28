@@ -21,3 +21,9 @@ django-admin startproject proyecto .
 python manage.py migrate
 
 python manage.py runserver
+
+
+
+En otra consola:
+$ python manage.py startapp inicio
+crea la carpeta 'inicio' con varios archivos .py
