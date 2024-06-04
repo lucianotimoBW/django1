@@ -1,11 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Template</title>
-</head>
-<body>
-    <h1>Mi Template 1</h1> -- fecha: {{fecha}} - {{nombre}} {{apellido}} {{edad}}
-</body>
-</html>
+{% extends "inicio/index.html" %}
+
+{% block h1_header %}Template{% endblock h1_header %}
+
+{% block main %}
+<h1>Mi Template 1</h1> -- fecha: {{fecha}} - {{nombre}} {{apellido}} {{edad}}
+{% endblock main %}
+
