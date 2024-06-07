@@ -43,3 +43,12 @@ def crear_auto(request, marca, modelo):
     auto = Auto(marca=marca, modelo=modelo)
     auto.save()
     return render(request, 'auto_templates/creacion.html',{'auto': auto})
+
+
+def crear_auto_v2(request):
+    print(request)
+    print(request.GET)
+    print(request.POST)
+    request.POST
+    Auto(marca=request.POST['marca'], modelo=request.POST['modelo']).save()
+    return render(request, 'inicio/crear_auto_v2.html')
